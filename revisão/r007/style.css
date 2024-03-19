@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:#0B8BCC;
+    --cor2:#2377A2;
+    --cor3:#2E5F77;
+    --cor4:#2A414D;
+}
+
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor2),var(--cor3),var(--cor4));
+    height: 150px;
+}
+
+header > img {
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+}
+
+nav > a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: rgb(10, 10, 10);
+    max-width: 1000px;
+    margin: auto;
+}
+
+main > h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+main .cursos {
+    max-width: 410px;
+    margin: auto;
+    margin-top: 40px;
+}
+

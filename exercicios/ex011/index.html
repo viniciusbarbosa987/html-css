@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica,áudio</title>
+</head>
+<body>
+<h1>Teste de imagens dinâmicas</h1>    
+<picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="">
+</picture>
+<p><a href="pag002.html" rel="next">Teste</a> da tag source com media min</p>
+<h1>Colocando áudio</h1>
+<h2>Primeira forma</h2>
+<audio src="midia/daquelejeito.mp3" controls></audio>
+<h2>Segunda forma</h2>
+<p>Como nem todos os navegadores possuem compatibilidade com mp3,use essa forma para adicionar outros formatos de arquivos de áudio</p>
+<audio preload="none" controls>
+    <source src="midia/daquelejeito.mp3" type="audio/mpeg">
+    <source src="midia/daquelejeito.ogg" type="audio/ogg">
+</audio>
+<audio src=""></audio>
+</body>
+</html>
