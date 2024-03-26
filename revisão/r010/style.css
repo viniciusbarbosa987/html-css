@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fontes/Gilroy-ExtraBold.otf) format(opentype);
+}
+
+:root {
+    --fonte-destaque: Gilroy;
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+header > a {
+    font-family:var(--fonte-destaque) ;
+    text-decoration: none;
+}
+
+header > a.nav {
+    margin-left: 50px;
+    color: white;
+}
+
+header > a.nav:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+}
